@@ -37,31 +37,31 @@ public  void run() {
 		try { 
 			
 					
-	 String Card1 = locationShared.blockingGet();	
-	 String Card2 = locationShared.blockingGet();
+	String Card1 = locationShared.blockingGet();	
+	String Card2 = locationShared.blockingGet();
 	  
-	 System.out.printf("%nPlay Game%n");
+	System.out.printf("%nPlay Game%n");
 	 
-	 System.out.printf("Card 1 is \"%s\"", Card1);
-	 System.out.printf(", Card 2 is \"%s\".", Card2);
+	System.out.printf("Card 1 is \"%s\"", Card1);
+	System.out.printf(", Card 2 is \"%s\".", Card2);
 	 	
-	 if (Card1.compareTo(Card2) > 0) {
-     System.out.printf("  Winner is Card 1%n%n");}
-	 else if (Card2.compareTo(Card1) > 0) {
-	  System.out.printf(" Winner is Card 2%n%n");}
+	if (Card1.compareTo(Card2) > 0) {
+    System.out.printf("  Winner is Card 1%n%n");}
+	else if (Card2.compareTo(Card1) > 0) {
+	System.out.printf(" Winner is Card 2%n%n");}
 	                                                         
-		else {
-		 System.out.printf(" Cards Tie!%n%n");
+	else {
+	System.out.printf(" Cards Tie!%n%n");
 		 
 		 Thread.sleep(generate.nextInt(4000));
 		
-	}
+	 }
 	}
 		
 catch(InterruptedException e) {
 	Thread.currentThread().interrupt();
-}	
-}
+  }	
+ }
 }
 
 

@@ -23,7 +23,6 @@ notifyAll();
 }
 
 
-
 @Override
 public synchronized String blockingGet() throws InterruptedException {
 	String readValue1;
@@ -40,11 +39,9 @@ notifyAll();
 occupied = false;
 readValue1 = buffer;
 
-
 notifyAll();
 return readValue1;
-}
-
+ }
 }
  	
 

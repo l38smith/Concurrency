@@ -21,9 +21,7 @@ public class MainDemo {
         executorService.execute(new Producer(locationShared));
         executorService.execute(new Consumer(locationShared));
 		
-	
-	
-	
-	}}
+  }
+ }
 
 

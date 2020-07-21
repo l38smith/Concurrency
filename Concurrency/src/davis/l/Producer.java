@@ -55,17 +55,12 @@ for (int count = 0; count < sharedSimpleArray.size(); count++) {
 
 catch(InterruptedException e) {
 	Thread.currentThread().interrupt();
+          }
+	    }
+      }
+	}
+  }
 }
-
-	
-
-}
-	 
-}
-	
-}
-
-}}
 
 
 
